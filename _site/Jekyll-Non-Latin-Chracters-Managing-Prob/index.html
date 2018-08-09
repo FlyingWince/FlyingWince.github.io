@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Jekyll中的非拉丁字母梗概自适配问题 - Wince's Yard</title>
+
+  <!-- Edit site and author settings in `_config.yml` to make the social details your own -->
+
+    <meta content="Wince's Yard" property="og:site_name">
+  
+    <meta content="Jekyll中的非拉丁字母梗概自适配问题" property="og:title">
+  
+  
+    <meta content="article" property="og:type">
+  
+  
+    <meta content="You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes." property="og:description">
+  
+  
+    <meta content="http://localhost:4000/Jekyll-Non-Latin-Chracters-Managing-Prob/" property="og:url">
+  
+  
+    <meta content="2018-08-09T19:18:00+08:00" property="article:published_time">
+    <meta content="http://localhost:4000/about/" property="article:author">
+  
+  
+    <meta content="http://localhost:4000/assets/img/2018-08-09/2018-08-09-JekyllPage.png" property="og:image">
+  
+  
+    
+  
+  
+    
+    <meta content="Jekyll" property="article:tag">
+    
+    <meta content="Liquid" property="article:tag">
+    
+  
+
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@">
+    <meta name="twitter:creator" content="@">
+  
+    <meta name="twitter:title" content="Jekyll中的非拉丁字母梗概自适配问题">
+  
+  
+    <meta name="twitter:url" content="http://localhost:4000/Jekyll-Non-Latin-Chracters-Managing-Prob/">
+  
+  
+    <meta name="twitter:description" content="You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes.">
+  
+  
+    <meta name="twitter:image:src" content="http://localhost:4000/assets/img/2018-08-09/2018-08-09-JekyllPage.png">
+  
+
+	<meta name="description" content="You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes.">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<meta property="og:image" content="">
+	<link rel="shortcut icon" href="/assets/img/favicon/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" href="/assets/img/favicon/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="/assets/img/favicon/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="/assets/img/favicon/apple-touch-icon-114x114.png">
+	<!-- Chrome, Firefox OS and Opera -->
+	<meta name="theme-color" content="#263959">
+	<!-- Windows Phone -->
+	<meta name="msapplication-navbutton-color" content="#263959">
+	<!-- iOS Safari -->
+	<meta name="apple-mobile-web-app-status-bar-style" content="#263959">
+	<!-- Google Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=PT+Serif:400,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
+	<!-- Font Awesome -->
+	<link rel="stylesheet" href="/assets/fonts/font-awesome/css/font-awesome.min.css">
+	<!-- Styles -->
+	<link rel="stylesheet" href="/assets/css/main.css">
+</head>
+
+<body>
+
+  <div class="wrapper">
+    <aside class="sidebar">
+  <header>
+    <div class="about">
+      <div class="cover-author-image">
+        <a href="/"><img src="/assets/img/nier-128-128.jpg" alt="Wince"></a>
+      </div>
+      <div class="author-name">Wince</div>
+      <p>The page is still being tested.</p>
+    </div>
+  </header> <!-- End Header -->
+  <footer>
+    <section class="contact">
+      <h3 class="contact-title">Contact me</h3>
+      <ul>
+        
+          <li><a href="https://twitter.com/" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+        
+        
+          <li><a href="https://facebook.com/" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+        
+        
+          <li class="github"><a href="http://github.com/" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a></li>
+        
+        
+          <li class="linkedin"><a href="https://in.linkedin.com/" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+        
+        
+          <li class="email"><a href="mailto:你是个弟弟.逗比@blog.com"><i class="fa fa-envelope-o" aria-hidden="true"></i></a></li>
+        
+      </ul>
+    </section> <!-- End Section Contact -->
+    <div class="copyright">
+      <p>2018 &copy; Wince</p>
+    </div>
+  </footer> <!-- End Footer -->
+</aside> <!-- End Sidebar -->
+<div class="content-box clearfix">
+  <article class="article-page">
+  <div class="page-content">
+    
+    <div class="page-cover-image">
+      <figure>
+        <img class="page-image" src=/assets/img/2018-08-09/2018-08-09-JekyllPage.png alt="Jekyll中的非拉丁字母梗概自适配问题">
+        
+      </figure>
+    </div> <!-- End Page Cover Image -->
+    
+    <div class="wrap-content">
+      <header class="header-page">
+        <h1 class="page-title">Jekyll中的非拉丁字母梗概自适配问题</h1>
+        <div class="page-date"><span>2018, Aug 09&nbsp;&nbsp;&nbsp;&nbsp;</span></div>
+      </header>
+      <p>写上一篇的时候发现主页面总是模板范例的文章和我自己写的高度不同。查post的css，写的是100%宽度和最低高度11rem, 但是高度会被truncatewords读取的单词数撑开, 格式为英文空格断开的单词数目。<br />
+遂各种谷歌百度必应之</p>
+<h3 id="方法一-truncate">方法一 Truncate</h3>
+<p>用truncate控制显示的梗概字数，这种方法不精确不完美，但是很简便。这也是目前我这个新手使用的方法，本例中配合修改最低高度为13rem，设置“truncate: 70”可确保两者高度肉眼基本一致，如果你看起来不一致可能我眼神不好吧。<br />
+reference: <a href="https://github.com/jekyll/jekyll/issues/732">jekyll/jekyll: How to make “truncatewords” work for non-English characters #732</a>~</p>
+
+<h3 id="方法二-内置标签">方法二 内置标签</h3>
+<p>在文章post内容中插入自定义的标签以标记梗概的截取位置，具体参考如下<br />
+reference: <a href="http://kingauthur.info/2013/01/20/the-paginator-and-excerpt-in-jekyll/">Kingauthur’s Blog</a>~</p>
+
+<h3 id="方法三-自定义判断长度逻辑">方法三 自定义判断长度逻辑</h3>
+<p>Ruby下判断输入的截取长度，修正见<a href="https://github.com/Shopify/liquid/pull/183/commits/80eacde8b03697de0e44aaf442052fb2fc15377f">Fix for [liquid] Make “truncatewords” and “truncate” work for non-English characters (#166) #183</a>
+    # Truncate a string down to x characters
+    def truncate(input, length = 50, truncate_string = “…”)
+      if input.nil? then return end
+      l = length.to_i - truncate_string.length
+      l = 0 if l &lt; 0
+      a=0
+      input.length &gt; length.to_i ? input.chars.take_while{|c| (a += c.bytes.to_a.length) &lt;= length }.join + truncate_string : input
+    end</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>def truncatewords(input, words = 15, truncate_string = "...")
+  if input.nil? then return end
+  wordlist = input.to_s.split
+  l = words.to_i - 1
+  l = 0 if l &lt; 0
+  wordlist.length &gt; l ? wordlist[0..l].join(" ") + truncate_string : input
+end  
+</code></pre></div></div>
+
+<p>全部代码见<a href="https://github.com/petetak/liquid/blob/80eacde8b03697de0e44aaf442052fb2fc15377f/lib/liquid/standardfilters.rb">petetak/liquid/lib/liquid/standardfilters.rb</a><br />
+reference: <a href="https://github.com/Shopify/liquid/issues/166">Shopify/liquid: Make “truncatewords” and “truncate” work for non-English characters #166</a>~</p>
+
+<p>本人一点都不懂Liquid和Ruby, 只能改改模板的水平把，所以我躺下了。<br />
+对，后面俩都没验证呢</p>
+
+      <div class="page-footer">
+        <div class="page-share">
+          <a href="https://twitter.com/intent/tweet?text=Jekyll中的非拉丁字母梗概自适配问题&url=http://localhost:4000/Jekyll-Non-Latin-Chracters-Managing-Prob/" title="Share on Twitter" rel="nofollow" target="_blank">Twitter</a>
+          <a href="https://facebook.com/sharer.php?u=http://localhost:4000/Jekyll-Non-Latin-Chracters-Managing-Prob/" title="Share on Facebook" rel="nofollow" target="_blank">Facebook</a>
+          <a href="https://plus.google.com/share?url=http://localhost:4000/Jekyll-Non-Latin-Chracters-Managing-Prob/" title="Share on Google+" rel="nofollow" target="_blank">Google+</a>
+        </div>
+        <div class="page-tag">
+          
+            <a href="/tags#Jekyll" class="tag">&#35; Jekyll</a>
+          
+            <a href="/tags#Liquid" class="tag">&#35; Liquid</a>
+          
+        </div>
+      </div>
+      <section class="comment-area">
+  <div class="comment-wrapper">
+    
+  </div>
+</section> <!-- End Comment Area -->
+
+    </div> <!-- End Wrap Content -->
+  </div> <!-- End Page Content -->
+</article> <!-- End Article Page -->
+
+</div>
+
+  </div>
+  
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  ga('create', '', 'auto');
+  ga('send', 'pageview');
+</script> <!-- End Analytics -->
+
+</body>
+</html>
