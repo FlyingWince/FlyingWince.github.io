@@ -7,8 +7,7 @@
                 https://superdevresources.com/image-caption-jekyll/
                 https://jekyllrb.com/docs/posts/ pic&pdf
                 https://www.jianshu.com/p/d7d6da4b7c60
-                https://segmentfault.com/a/1190000004543870
-
+                https://segmentfault.com/a/1190000004543870  
                 http://happyseeker.github.io/git/2016/01/26/GitHub-Pages-Chinese-Font.html 字体
                 https://www.jianshu.com/p/ffbbed22f984 Google Analatics/Disqus
                 https://blog.sverrirs.com/2016/04/custom-jekyll-tags.html Custom Liquid Tags
