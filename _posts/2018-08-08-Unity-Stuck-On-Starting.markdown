@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 关于Unity 2017.1~4 遇到卡Start界面问题一种情况
+title: 关于Unity 2017.1~4 卡Start界面问题一种情况
 date: 2018-08-08 23:00:00 +0800
 description: You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. # Add post description (optional)
 img: 2018-08-08/2018-08-08-Unity-Stuck-On-Starting.png # Add image post (optional)
