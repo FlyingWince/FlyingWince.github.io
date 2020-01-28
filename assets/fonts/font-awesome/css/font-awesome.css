@@ -404,6 +404,9 @@
 .fa-play:before {
   content: "\f04b";
 }
+.fa-palette:before {
+  content: "\f53f"; }
+
 .fa-pause:before {
   content: "\f04c";
 }
