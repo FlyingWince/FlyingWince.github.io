@@ -16,16 +16,15 @@ layout: default
     <section class="contact">
       <h3 class="contact-folder">Repo</h3>
       <ul>
-        {% if site.social-twitter %}
+<!--    target="_blank" will open a new tab
           <li><a href="https://twitter.com/{{ site.social-twitter }}" target="_blank"><i class="fa fa-book" aria-hidden="true"></i></a></li>
-        {% else %}
-          <li><a href="https://twitter.com/" target="_blank"><i class="fa fa-book" aria-hidden="true"></i></a></li>
-        {% endif %}
-        {% if site.social-facebook %}
-          <li><a href="https://facebook.com/{{ site.social-facebook }}" target="_blank"><i class="fa fa-pencil-square" aria-hidden="true"></i></a></li>
-        {% else %}
-          <li><a href="https://facebook.com/" target="_blank"><i class="fa fa-pencil-square" aria-hidden="true"></i></a></li>
-        {% endif %}
+          <li><a href="{{site.baseurl}}/pixels/" target="_blank"><i class="fa fa-pencil-square" aria-hidden="true"></i></a></li>
+-->
+        <!-- posts -->
+          <li><a href="{{site.baseurl}}/" ><i class="fa fa-book" aria-hidden="true"></i></a></li>
+        <!-- pixels-->
+          <li><a href="{{site.baseurl}}/pixels/" ><i class="fa fa-pencil-square" aria-hidden="true"></i></a></li>
+
         <br>
         <br>
       </ul>

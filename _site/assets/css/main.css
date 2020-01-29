@@ -1021,6 +1021,16 @@ table tfoot td {
           align-items: stretch;
 }
 
+.contact .contact-folder {
+  position: relative;
+  color: #333030;
+  font-weight: 400;
+  font-size: 14px;
+  margin: 0 0 5px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
 .contact .contact-title {
   position: relative;
   color: #333030;
@@ -1305,6 +1315,25 @@ a.newer-posts:hover {
 .page-footer .page-tag a:hover {
   text-decoration: underline;
 }
+
+/* - - - - - - - - - Pixels Style - - - - - - - - -*/
+
+.pixels .pixels-end::after {
+  content: "";
+  display: block;
+  height: 3px;
+  width: -webkit-calc(100%);
+  width: calc(100%);
+  -webkit-transform: translateY(0%);
+      -ms-transform: translateY(0%);
+          transform: translateY(0%);
+  position: relative;
+  
+  left: 0;
+  background-color: #515151;
+}
+
+
 
 /* - - - - - - - - - - Tag Styles - - - - - - - - - - */
 .blog-tags {
