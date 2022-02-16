@@ -3,7 +3,7 @@ layout: post
 title: 关于用Jmeter正则提取器提取数字给条件判断事务器用的笔记
 date: 2022-01-28 15:46:00 +0800
 description: You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. # Add post description (optional)
-img: 2018-08-08/2018-08-08-Unity-Stuck-On-Starting.png # Add image post (optional)
+img: 2022-01-28/调试后置处理器回显未查到.png # Add image post (optional)
 tags: [Jmeter, Regular Expression Extractor] # add tag
 ---
 因为一个需求要测抽奖的页面，所以打算做一个脚本时抽到以后，再执行后续的接口调用（比如捐款等，期望是类似生产实际场景
